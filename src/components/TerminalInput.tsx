@@ -11,7 +11,7 @@ type InputProps = {
 };
 
 const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
-  const [output, setOutput] = useState<any>("");
+  const [output, setOutput] = useState<JSX.Element>();
   const [hasRunInitialCommand, setHasRunInitialCommand] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
