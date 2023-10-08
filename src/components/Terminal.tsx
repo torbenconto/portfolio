@@ -9,7 +9,7 @@ function Terminal() {
     ];
 
     return (
-        <div className="w-full h-full terminal-main-bg p-2 cascadia-code">
+        <div className="w-full min-h-screen terminal-main-bg p-2 cascadia-code">
             <TerminalInput />
         </div>
     )
