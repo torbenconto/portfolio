@@ -20,14 +20,21 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
 
     if (!hasRunInitialCommand && initialCommand) {
       setOutput(<NeoFetch />);
+      if (inputRef.current) {
+        inputRef.current.value = initialCommand
+        inputRef.current.disabled = true
+      }
       setDone(true);
       setHasRunInitialCommand(true);
     }
+
   }, [autoFocus, hasRunInitialCommand, initialCommand, setDone]);
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      setOutput(<p>{e.currentTarget.value}</p>);
+      if (e.currentTarget.value == "projects") {
+        setOutput(<p>{e.currentTarget.value}</p>);
+      }
       setDone(true);
       e.currentTarget.disabled = true;
     }
