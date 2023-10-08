@@ -1,0 +1,7 @@
+:root {
+    --terminal-main-bg: #181818
+}
+
+.terminal-main-bg {
+    background-color: var(--terminal-main-bg);
+}
