@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, FC } from "react";
 import "./TerminalInput.css";
 import NeoFetch from "./NeoFetch";
+import Projects from "./Projects";
 
 type InputProps = {
   setDone: (done: boolean) => void;
@@ -32,8 +33,8 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      if (e.currentTarget.value == "projects") {
-        setOutput(<p>{e.currentTarget.value}</p>);
+      if (e.currentTarget.value === "projects") {
+        setOutput(<Projects />);
       }
       setDone(true);
       e.currentTarget.disabled = true;
