@@ -26,7 +26,7 @@ function Projects() {
     },
     {
       title: "Zeus",
-      description: "A powerful, lexer oriented text manipulation tool made in Go",
+      description: "A powerful, lexer oriented text manipulation tool made in Go.",
       image: "zeus.webp",
       link: "https://github.com/torbenconto/zeus"
     },
