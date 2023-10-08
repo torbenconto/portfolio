@@ -12,8 +12,9 @@ function NeoFetch() {
         <p className="font-semibold">- - - - - - - - - - - - - - - -</p>
         <strong>Age:</strong> 14 (freshman/9th grade)
         <h1>
-          <strong>Role:</strong> Intermediate Web/Systems developer studying CS
+          <strong>Role:</strong> Intermediate Web/Systems developer studying CS.
         </h1>
+        {/* TODO: resume command */}
         <h1 className="py-1">
           <strong>Experience:</strong> ~3 years overall.
         </h1>
