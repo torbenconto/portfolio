@@ -1,7 +1,9 @@
+import Terminal from "./components/Terminal"
+
 function App() {
   return (
-    <div className="text-red-200">
-      adsnaojdsnaois
+    <div className="w-full h-screen">
+      <Terminal />
     </div>
   );
 }
