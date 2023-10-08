@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect, FC } from "react";
 import "./TerminalInput.css";
+import NeoFetch from "./NeoFetch";
 
 type InputProps = {
   setDone: (done: boolean) => void;
@@ -8,7 +9,7 @@ type InputProps = {
 };
 
 const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
-  const [output, setOutput] = useState<string>("");
+  const [output, setOutput] = useState<any>("");
   const [hasRunInitialCommand, setHasRunInitialCommand] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -18,7 +19,7 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
     }
 
     if (!hasRunInitialCommand && initialCommand) {
-      setOutput("Running initial command...");
+      setOutput(<NeoFetch />);
       setDone(true);
       setHasRunInitialCommand(true);
     }
@@ -26,7 +27,7 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      setOutput(e.currentTarget.value);
+      setOutput(<p>{e.currentTarget.value}</p>);
       setDone(true);
       e.currentTarget.disabled = true;
     }
@@ -48,7 +49,7 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
           disabled={!autoFocus}
         />
       </div>
-      {output && <p>{output}</p>}
+      {output && output}
     </>
   );
 };
