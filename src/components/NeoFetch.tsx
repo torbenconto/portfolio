@@ -22,7 +22,7 @@ function NeoFetch() {
           <strong>My Tools:</strong> TypeScript, Golang, C (learning), Various web and server frameworks.
         </h1>
         <h1 className="py-1">
-          <strong>Projects:</strong> Enter "projects" in the terminal and press enter(return) to view a full list of my projects.
+          <strong>Projects:</strong> Enter "projects" in the terminal and press enter(return) to view a full list of my projects. A project not developed on this account is gopwd (https://github.com/pvwnthem/gopwd), a golang implementation of "pass" with more features.
         </h1>
         <h1 className="py-4">
           <strong>Philosopy:</strong> To write code that prioritizes simplicity, clarity, and maintainability, making it easy for both myself and others to understand and work with. Embrace continuous learning and collaboration to create robust, reliable, and ethical software solutions.
