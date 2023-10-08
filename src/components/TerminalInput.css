@@ -1,0 +1,17 @@
+:root {
+    --name-color: #fff;
+    --at-symbol-color: #fff;
+    --location-color: #fff;
+}
+
+.name-color {
+    color: var(--name-color)
+}
+
+.at-symbol-color {
+    color: var(--at-symbol-color)
+}
+
+.location-color {
+    color: var(--location-color)
+}

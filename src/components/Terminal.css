@@ -2,6 +2,15 @@
     --terminal-main-bg: #181818
 }
 
+@font-face {
+    font-family: "cascadia-code";
+    src: url("/public/fonts/CascadiaCode.ttf");
+}
+
+.cascadia-code {
+    font-family: "cascadia-code";
+}
+
 .terminal-main-bg {
     background-color: var(--terminal-main-bg);
 }
