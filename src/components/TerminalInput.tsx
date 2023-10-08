@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect, FC } from "react";
 import "./TerminalInput.css";
 import NeoFetch from "./NeoFetch";
 import Projects from "./Projects";
+import CommandNotFound from "./CommandNotFound";
 
 type InputProps = {
   setDone: (done: boolean) => void;
@@ -35,6 +36,8 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
     if (e.key === "Enter") {
       if (e.currentTarget.value === "projects") {
         setOutput(<Projects />);
+      } else {
+        setOutput(<CommandNotFound command={e.currentTarget.value} />)
       }
       setDone(true);
       e.currentTarget.disabled = true;

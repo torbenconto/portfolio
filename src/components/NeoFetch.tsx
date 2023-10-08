@@ -24,7 +24,7 @@ function NeoFetch() {
           <strong>Projects:</strong> Enter "projects" in the terminal and press enter(return) to view a full list of my projects.
         </h1>
         <h1 className="py-4">
-          <strong>Philosopy:</strong> To write code that prioritizes simplicity, clarity, and maintainability, making it easy for both myself and others to understand and work with. Embrace continuous learning and collaboration to create robust, reliable, and ethical software solutions
+          <strong>Philosopy:</strong> To write code that prioritizes simplicity, clarity, and maintainability, making it easy for both myself and others to understand and work with. Embrace continuous learning and collaboration to create robust, reliable, and ethical software solutions.
         </h1>
         <div className="flex h-12 w-1/3 space-x-2">
           <a href="https://github.com/torbenconto">
