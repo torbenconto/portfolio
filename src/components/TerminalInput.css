@@ -25,12 +25,9 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    caret-color: transparent;
+    caret-color: white;
     background-color: transparent;
-    border: none;
     outline: none;
-
-    position: relative;
 }
 .input-box:focus {
     outline: none !important;

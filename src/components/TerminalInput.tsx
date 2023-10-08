@@ -9,8 +9,7 @@ function TerminalInput() {
                 <p className="font-normal location-color">nhhs</p>
                 <p className="font-semibold arrow-color ml-1">&gt;</p>
             </p>
-            <input className="input-box px-1">
-            </input>
+            <input className="input-box px-1 text-white" />
         </div>
         </>
     )
