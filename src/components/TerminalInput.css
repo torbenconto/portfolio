@@ -2,6 +2,7 @@
     --name-color: #fff;
     --at-symbol-color: #fff;
     --location-color: #fff;
+    --arrow-color: #fff;
 }
 
 .name-color {
@@ -14,4 +15,23 @@
 
 .location-color {
     color: var(--location-color)
+}
+
+.arrow-color {
+    color: var(--arrow-color)
+}
+
+.input-box {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    caret-color: transparent;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    position: relative;
+}
+.input-box:focus {
+    outline: none !important;
 }
