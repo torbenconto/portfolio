@@ -1,7 +1,7 @@
 
 function CommandNotFound({ command }: {command: string}) {
     return (
-        <p className="text-white">-bash: {command}: command not found</p>
+        <p className="text-white text-md">-bash: {command}: command not found</p>
     )
 }
 

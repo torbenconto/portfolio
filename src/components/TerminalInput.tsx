@@ -34,10 +34,19 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      if (e.currentTarget.value === "projects") {
-        setOutput(<Projects />);
-      } else {
-        setOutput(<CommandNotFound command={e.currentTarget.value} />)
+      switch (e.currentTarget.value) {
+        case "projects":
+          setOutput(<Projects />);
+          break;
+        case "neofetch":
+          setOutput(<NeoFetch />)
+          break;
+        case "clear":
+          window.location.reload()
+          break;
+        default:
+          setOutput(<CommandNotFound command={e.currentTarget.value} />)
+          break;
       }
       setDone(true);
       e.currentTarget.disabled = true;
@@ -46,7 +55,7 @@ const Input: FC<InputProps> = ({ setDone, autoFocus, initialCommand }) => {
 
   return (
     <>
-      <div className="flex space-x-1">
+      <div className="flex space-x-1 text-md">
         <p className="font-semibold flex name-color">
           torbenconto
           <p className="font-normal at-symbol-color">@</p>
